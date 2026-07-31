@@ -1,0 +1,88 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>{{ listing.title }}</h2>
+
+    <table>
+        <th> Owner</th>
+        <th>| Title</th>
+        <th>| Description</th>
+        <th>| Category</th>
+        <th>| Starting Price</th>
+        <th>| Actual Price</th>
+        <th>| Preview</th>
+        
+        <tr>
+            <td>{{ listing.owner }}</a></td>
+            <td>| {{ listing.title }}</a></td>
+            <td>| {{ listing.description }}</td>
+            <td>| {{ listing.category }}</td>
+            <td>| {{ listing.starting_bid }}</td>
+            <td>| {{ bid|floatformat:2 }}</td>
+            <td> <img src="{{ listing.url }}"></td>  
+        </tr>
+    </table>
+    <p></p>
+    {% if user.is_authenticated %}
+        
+        {% if not on_watchlist %}
+            <form action="{% url 'save' title=listing.title %}" method="post">
+            {% csrf_token %}
+                <input class="btn btn-primary" type="submit" value="Save to Watchlist">
+            </form>
+            {% else %}
+            <form action="{% url 'delete' title=listing.title %}" method="post">
+            {% csrf_token %}
+                <input class="btn btn-primary" type="submit" value="Delete from Watchlist">
+            </form>
+            {% endif %}
+
+            <p></p>
+            {% if listing.owner == user and not is_closed %}
+            <form action="{% url 'close' title=listing.title %}" method="post">
+            {% csrf_token %}
+                <input class="btn btn-primary" type="submit" value="Close Auction">
+            </form>
+            {% endif %}
+
+            {% if not is_closed %}
+            <div><p></p>
+                <form action="{% url 'bid' title=listing.title %}" method="post">
+                    {% csrf_token %}
+                        <input type="number" name="bid" step="0.01" required>
+                        <input class="btn btn-primary" type="submit" value="Send bid">
+                        {% if bad_req %}
+                        <p>
+                            bid must be bigger than actual price
+                        </p>
+                        {% endif %}
+                </form>
+            </div>
+            {% endif %}
+            {% if user.username == listing.winner %}
+            <p>
+                <h1>U are the Winner!</h1> 
+            </p>
+            {% endif %}
+            
+            
+    {% endif %}          
+    
+        <p></p>
+        <h3>Comments</h3>
+        {% if user.is_authenticated %}
+            <form action="{% url 'comment' title=listing.title %}" method="post">
+            {% csrf_token %}
+                <input type="text" name="comment" required>
+                <input class="btn btn-primary" type="submit" value="Post Comment">
+            </form>
+        {% endif %}
+        {% for comment in comments %}
+        
+         <table>
+            <tr>- </tr>
+            <tr>{{ comment.comment }}</tr>
+        </table>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>Active Listings</h2>
+
+    <table>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Actual Price</th>
+        <th>Preview</th>
+        
+        {% for listing, bid in offers %}
+            
+                <tr>
+                    <td> <a href="{% url 'show' title_item=listing.title %}">{{ listing.title }}</a></td>
+                    <td>{{ listing.description }}</td>
+                    <td> {{bid|floatformat:2}}</td>
+                    <td><img src="{{ listing.url }}"></td> 
+                </tr>
+             
+        {% endfor %}
+    </table>
+{% endblock %}

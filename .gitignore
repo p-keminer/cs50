@@ -22,7 +22,16 @@ a.out
 # Web application runtime data
 flask_session/
 instance/
+node_modules/
+staticfiles/
+*.sqlite3-journal
 *.log
+
+# Generated reports and local course media
+reports/
+*.mp3
+*.mp4
+*.pdf
 
 # Operating systems and editors
 .DS_Store
