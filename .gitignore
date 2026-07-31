@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# C build output
+*.o
+*.obj
+*.exe
+a.out
+
+# Web application runtime data
+flask_session/
+instance/
+*.log
+
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+*.swp
+*~

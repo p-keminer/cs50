@@ -1,0 +1,16 @@
+To characterize the listeners aura, i would consider the average valence score as the primary
+metric . Building on that, i would use the averagy energy score as an indicator of the auras expression
+and the danceability score as a measure of how much the aura's expression is inward- or outward-focused.
+
+Since the average valence is around 0.5 the mood is neither very positive nor negative.
+The average energy is slightly above average and the danceability nearly 3/4.
+Therefore, i would characterize the listeners aura as a rather balanced in mood fairly enegetic and quite danceable.
+
+
+The calculation may not be very represantative, as it does not take into account the number of plays or the other values in the tables.
+Furthermore, it weights everything equally because it uses only the average values of all songs.
+individual songs can differ greatly in their unique identities which blurs the distinct character of the songs itself.
+
+A better calculation would correlate individual values, such as dividing the number of plays b a certain factor to obtain a scalar for
+a formular like:  energy/danceability * duration/tempo additionally valence and loudness could be included as an additive value
+finally, you could calculate the average.

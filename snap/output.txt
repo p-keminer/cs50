@@ -1,0 +1,5 @@
+QUERY PLAN
+|--SEARCH users USING INTEGER PRIMARY KEY (rowid=?)
+`--SCALAR SUBQUERY 1
+   |--SCAN messages USING COVERING INDEX search_messages_by_to_user_id
+   `--USE TEMP B-TREE FOR ORDER BY

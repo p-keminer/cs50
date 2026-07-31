@@ -1,0 +1,20 @@
+HTML tags used:
+
+nav, div, a, button, span, main, section, h1 , h3, p, footer, i
+
+
+CSS properties used:
+
+background-image, background-size, background-repeat,
+color, font-size, font-weight, margin, padding, width,
+height, border-bottom, border top
+
+
+JavaScript:
+
+I Used Javascript with an onclickevent to show alert thanking to visit my website
+
+
+Bootstrap:
+
+I used Bootstrap to create a responsive navigation bar, a collapsible burger menu, and styled buttons

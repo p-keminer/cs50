@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?: it is as fast as Merge sort running sorted*.txt
+
+sort2 uses: Merge sort
+
+How do you know?: it is the fastest one to run sort random*.txt
+
+sort3 uses: Selection sort
+
+How do you know?: it is faster than bubble sort running on reversed*.txt

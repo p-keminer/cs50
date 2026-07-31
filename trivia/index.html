@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function() {
+
+                    let correct = document.querySelectorAll('.ok');
+
+                    for (let i = 0; i < correct.length; i++) {
+                                correct[i].addEventListener('click', function() {
+                                    correct[i].style.backgroundColor = 'Green';
+                                    correct[i].parentElement.querySelector('.check').innerHTML = 'Correct!';
+                            });
+                    }
+
+                    let incorrect = document.querySelectorAll('.notok');
+
+                    for (let i = 0; i < incorrect.length; i++) {
+                                incorrect[i].addEventListener('click', function() {
+                                    incorrect[i].style.backgroundColor = 'Red';
+                                    incorrect[i].parentElement.querySelector('.check').innerHTML = 'Incorrect';
+                            });
+                    }
+                    document.querySelector('#answer').addEventListener('click', function() {
+                        let input = document.querySelector('input');
+                        if (input.value === 'unlimited') {
+                            input.style.backgroundColor = 'green';
+                            input.parentElement.querySelector('.check').innerHTML = 'Correct!';
+                        }
+                        else
+                        {
+                            input.style.backgroundColor = 'red';
+                            input.parentElement.querySelector('.check').innerHTML = 'Incorrect!'
+                        }
+                    });
+                });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3> How old am I ? </h3>
+                <button class ="notok">18</button>
+                <button class ="notok">20</button>
+                <button class ="ok">22</button>
+                <p class="check"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>How fast you can speed up in germany ?</h3>
+                <input type="text"></input>
+                <button id= "answer"> submit </button>
+                <p class="check"></p>
+            </div>
+        </div>
+    </body>
+</html>

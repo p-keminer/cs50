@@ -1,0 +1,19 @@
+* text=auto
+
+*.c text eol=lf
+*.h text eol=lf
+*.py text eol=lf
+*.sql text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+
+*.db binary
+*.bmp binary
+*.gif binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.pdf binary

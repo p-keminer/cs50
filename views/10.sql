@@ -1,0 +1,1 @@
+SELECT COUNT (*) AS "OK" WHERE "artist" IS NOT "NULL" ORDER BY "entropy" DESC LIMIT 1;
