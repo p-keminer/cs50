@@ -11,20 +11,18 @@
 
 <a id="deutsch"></a>
 
-<div align="center">
-
-`EDUCATION` · `COMPUTER SCIENCE` · `PORTFOLIO`
-
 # CS50 Portfolio
 
 Persönliche Lösungen und Abschlussprojekte aus fünf Kursen des
 Harvard-CS50-Programms.
 
-`C` · `Python` · `SQL` · `Django` · `JavaScript`
+<div align="center">
 
-[`Übersicht`](#de-uebersicht) [`Kurse`](#de-kurse)
-[`Abschlussprojekte`](#de-abschlussprojekte) [`Lokaler Einstieg`](#de-lokaler-einstieg)
-[`Academic Honesty`](#de-academic-honesty)
+[![Übersicht](https://img.shields.io/badge/%C3%9Cbersicht-24292f?style=for-the-badge)](#de-uebersicht)
+[![Kurse](https://img.shields.io/badge/Kurse-24292f?style=for-the-badge)](#de-kurse)
+[![Abschlussprojekte](https://img.shields.io/badge/Abschlussprojekte-24292f?style=for-the-badge)](#de-abschlussprojekte)
+[![Lokaler Einstieg](https://img.shields.io/badge/Lokaler_Einstieg-24292f?style=for-the-badge)](#de-lokaler-einstieg)
+[![Academic Honesty](https://img.shields.io/badge/Academic_Honesty-24292f?style=for-the-badge)](#de-academic-honesty)
 
 </div>
 
@@ -93,7 +91,7 @@ CS50-Aufgabenstellung und die Dokumente in den Projektordnern.
 
 <div align="center">
 
-[`Nach oben`](#top)
+[![Nach oben](https://img.shields.io/badge/Nach_oben-24292f?style=for-the-badge)](#top)
 
 </div>
 
@@ -101,20 +99,18 @@ CS50-Aufgabenstellung und die Dokumente in den Projektordnern.
 
 <a id="english"></a>
 
-<div align="center">
-
-`EDUCATION` · `COMPUTER SCIENCE` · `PORTFOLIO`
-
 # CS50 Portfolio
 
 Personal solutions and final projects from five courses in Harvard's CS50
 program.
 
-`C` · `Python` · `SQL` · `Django` · `JavaScript`
+<div align="center">
 
-[`Overview`](#en-overview) [`Courses`](#en-courses)
-[`Final projects`](#en-final-projects) [`Local setup`](#en-local-setup)
-[`Academic Honesty`](#en-academic-honesty)
+[![Overview](https://img.shields.io/badge/Overview-24292f?style=for-the-badge)](#en-overview)
+[![Courses](https://img.shields.io/badge/Courses-24292f?style=for-the-badge)](#en-courses)
+[![Final projects](https://img.shields.io/badge/Final_projects-24292f?style=for-the-badge)](#en-final-projects)
+[![Local setup](https://img.shields.io/badge/Local_setup-24292f?style=for-the-badge)](#en-local-setup)
+[![Academic Honesty](https://img.shields.io/badge/Academic_Honesty-24292f?style=for-the-badge)](#en-academic-honesty)
 
 </div>
 
@@ -183,6 +179,6 @@ project directory remain authoritative.
 
 <div align="center">
 
-[`Back to top`](#top)
+[![Back to top](https://img.shields.io/badge/Back_to_top-24292f?style=for-the-badge)](#top)
 
 </div>
